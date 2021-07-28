@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listView_layout"
+    tools:context=".Banglore6">
+
+    <LinearLayout
+        android:id="@+id/viewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F2F2"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/toolbar"
+            android:background="@color/white"
+            android:backgroundTint="@color/white" />
+
+        <SearchView
+            android:id="@+id/search_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_round"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:outlineProvider="none"
+            android:queryHint="Search" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardlist1"
+            android:layout_width="375dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/listimg1"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/listimage_round"
+                tools:srcCompat="@drawable/carpark" />
+
+            <TextView
+                android:id="@+id/listtitle1"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="7dp"
+                android:text="metro Parking"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list1dis"
+                android:layout_width="200dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="30dp"
+                android:text="ON THE GOLDEN PARKING"
+                android:textColor="#AC0C0C"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listDistImg1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="50dp"
+                tools:srcCompat="@drawable/ic_baseline_swap_calls_24" />
+
+            <TextView
+                android:id="@+id/list1Dist"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="49dp"
+                android:text="7Km"
+                android:textColor="#8F7A7979"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listPriceImg1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="65dp"
+                tools:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
+            <TextView
+                android:id="@+id/list1Price"
+                android:layout_width="40dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="64dp"
+                android:text="50 RS/h"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listTimeImg1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="80dp"
+                tools:srcCompat="@drawable/ic_baseline_access_alarms_24" />
+
+            <TextView
+                android:id="@+id/list1Time"
+                android:layout_width="100dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="79dp"
+                android:text="06.00 Am To 11.00 Pm"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardlist2"
+            android:layout_width="375dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/listimage_round">
+
+            <ImageView
+                android:id="@+id/listimg2"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/listtitle2"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="7dp"
+                android:text="Square City"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list2dis"
+                android:layout_width="200dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="30dp"
+                android:text="FRONT PARKING"
+                android:textColor="#AC0C0C"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listDistImg2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="50dp"
+                tools:srcCompat="@drawable/ic_baseline_swap_calls_24" />
+
+            <TextView
+                android:id="@+id/list2Dist"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="49dp"
+                android:text="7Km"
+                android:textColor="#8F575656"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listPriceImg2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="65dp"
+                tools:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
+            <TextView
+                android:id="@+id/list2Price"
+                android:layout_width="40dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="64dp"
+                android:text="50 RS/h"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listTimeImg2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="80dp"
+                tools:srcCompat="@drawable/ic_baseline_access_alarms_24" />
+
+            <TextView
+                android:id="@+id/list2Time"
+                android:layout_width="100dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="79dp"
+                android:text="06.00 Am To 11.00 Pm"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardlist3"
+            android:layout_width="375dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/listimage_round">
+
+            <ImageView
+                android:id="@+id/listimg3"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/listtitle3"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="7dp"
+                android:text="PVR Multiplex"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list3dis"
+                android:layout_width="200dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="30dp"
+                android:text="UNDER GROUND PARKING"
+                android:textColor="#AC0C0C"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listDistImg3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="50dp"
+                tools:srcCompat="@drawable/ic_baseline_swap_calls_24" />
+
+            <TextView
+                android:id="@+id/list3Dist"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="49dp"
+                android:text="7Km"
+                android:textColor="#8F7A7979"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listPriceImg3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="65dp"
+                tools:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
+            <TextView
+                android:id="@+id/list3Price"
+                android:layout_width="40dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="64dp"
+                android:text="50 RS/h"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listTimeImg3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="80dp"
+                tools:srcCompat="@drawable/ic_baseline_access_alarms_24" />
+
+            <TextView
+                android:id="@+id/list3Time"
+                android:layout_width="100dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="79dp"
+                android:text="06.00 Am To 11.00 Pm"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardlist4"
+            android:layout_width="375dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/listimage_round">
+
+            <ImageView
+                android:id="@+id/listimg4"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/listtitle4"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="7dp"
+                android:text="Lalbag Nagar"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list4dis"
+                android:layout_width="200dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="30dp"
+                android:text="ON THE GROUND PARKING"
+                android:textColor="#AC0C0C"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listDistImg4"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="50dp"
+                tools:srcCompat="@drawable/ic_baseline_swap_calls_24" />
+
+            <TextView
+                android:id="@+id/list4Dist"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="49dp"
+                android:text="7Km"
+                android:textColor="#8F7A7979"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listPriceImg4"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="65dp"
+                tools:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
+            <TextView
+                android:id="@+id/list4Price"
+                android:layout_width="40dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="64dp"
+                android:text="50 RS/h"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/listTimeImg4"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="80dp"
+                tools:srcCompat="@drawable/ic_baseline_access_alarms_24" />
+
+            <TextView
+                android:id="@+id/list4Time"
+                android:layout_width="100dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="79dp"
+                android:text="06.00 Am To 11.00 Pm"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <include
+            layout="@layout/bottom_navigation"
+            android:background="#8F7A7979" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#8F7A7979">
+
+        <include
+            android:id="@+id/navigationDrawer"
+            layout="@layout/navigation_drawer" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

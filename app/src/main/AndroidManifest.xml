@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalapnlab">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar.">
+        <activity android:name=".Reviwes_15"></activity>
+        <activity android:name=".MyWallets20" />
+        <activity android:name=".CreditDebitCards14" />
+        <activity android:name=".EditProfile_9" />
+        <activity android:name=".MyProfile8" />
+        <activity android:name=".Banglore6" />
+        <activity android:name=".ConfirmCode4" />
+        <activity android:name=".VerificationCode3" />
+        <activity android:name=".LoginAndSignUp2" />
+        <activity android:name=".WelcomePage1" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
