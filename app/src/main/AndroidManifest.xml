@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar.">
-        <activity android:name=".Reviwes_15"></activity>
+        <activity android:name=".Reserve_Confirm"></activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="Add Cards"></activity>
+        <activity android:name=".Reviwes_15" />
         <activity android:name=".MyWallets20" />
         <activity android:name=".CreditDebitCards14" />
         <activity android:name=".EditProfile_9" />
@@ -19,7 +23,9 @@
         <activity android:name=".VerificationCode3" />
         <activity android:name=".LoginAndSignUp2" />
         <activity android:name=".WelcomePage1" />
-        <activity android:name=".SplashScreen">
+        <activity
+            android:name=".AddCard"
+            android:parentActivityName=".AddCard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
